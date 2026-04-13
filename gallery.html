@@ -2,28 +2,65 @@
 <html>
 <head>
     <title>Kitten Gallery - MEOWGICAL WORLD</title>
-    <style>
-      img {
-        border: 5px solid white;
-        border-radius: 15px;
-        margin: 10px;
-        box-shadow: 2px 2px 10px rgba(0,0,0,0.1); 
-      } 
-    </style> 
+   <style>
+  /* This ensures the 'paper' of your website is always full screen */
+  html {
+    height: 100%;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    
+    /* 1. This forces the body to be at least the height of your screen */
+    min-height: 100vh; 
+    
+    /* 2. The Background Image Settings */
+    background-image: url('images/lokie-posing.jpg');
+    
+    /* 'cover' will now stretch the photo to leave NO empty spaces */
+    background-size: cover; 
+    
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed; /* Keeps the photo still while you scroll */
+
+    font-family: Arial, sans-serif;
+    color: white;
+  }
+
+  /* Keeps your content readable over the HD photo */
+  .content-box {
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 12px;
+    margin: 20px;
+    display: inline-block;
+    max-width: 90%;
+  }
+
+  img {
+    border: 4px solid white;
+    border-radius: 15px;
+    box-shadow: 0px 4px 15px rgba(0,0,0,0.5);
+  }
+</style>
 </head>
 
 <body bgcolor="lightblue"> <h1 style="color: darkblue;">BABIE BARIE'S FRIENDS</h1>
 
-    <p style="color: black; font-size: 18px;">
-        Welcome to the gallery! Here are even more photos of our cutie cats.
-    </p>
+<br>
+
+    <p class="content-box">Welcome to the gallery! Here are even more photos of our cutie cats.</p>
+
+<br> <br>
 
     <img height="200px" width="200px" src="images/babie-momie.jpg" alt="kitten photo">
     <img height="200px" width="200px" src="images/mochiche.jpg" alt="another kitten">
     <img height="200px" width="200px" src="images/lokikie.jpg" alt="another cute kitten">
     <br><br>
 
-    <a href="index.html" style="font-weight: bold; color: blue;">← Go Back Home</a>
+     <a href="index.html" style="font-weight: bold; color: whitesmoke;">← Go Back Home</a>
 
 </body>
 </html>
