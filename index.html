@@ -25,13 +25,22 @@
         }
 
         h1 {
-            font-family: 'Playfair Display', serif;
-            color: #ff4d4d; /* Slightly softer red for a premium look */
-            font-weight: 700;
-            text-transform: uppercase;
-            letter-spacing: 3px;
-            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
-            margin-left: 20px;
+           font-family: 'Playfair Display', serif;
+           color: #ff4d4d; 
+           font-weight: 700;
+           text-transform: uppercase;
+           letter-spacing: 5px; /* Increased spacing for elegance */
+           text-align: center;
+    
+           /* STACKED SHADOWS: This makes the text pop from every angle */
+           text-shadow: 
+            2px 2px 0px #000, 
+           -1px -1px 0px #000,  
+           1px -1px 0px #000,
+           -1px 1px 0px #000,
+           0px 0px 15px rgba(0,0,0,1); 
+        
+           margin-top: 40px;
         }
 
         /* The Magazine Style Content Box */
@@ -57,12 +66,22 @@
             font-size: 1.2em;
         }
 
+        .content-box {
+            display: block;          /* Takes up the full width allowed */
+            max-width: 900px;        /* Prevents lines from being too long to read */
+            margin: 40px auto;       /* The 'auto' centers the box on big screens */
+            width: 90%;              /* Ensures it stays small on mobile */
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 30px;
+        }
+
         img {
             border: 8px solid white;
             border-radius: 2px; /* Square/slightly rounded looks more like a printed photo */
             box-shadow: 0px 10px 30px rgba(0,0,0,0.5);
             margin: 20px;
             transition: transform 0.3s ease;
+            cursor: pointer;
         }
 
         img:hover {
@@ -73,6 +92,12 @@
             border-radius: 8px;
             margin: 20px;
             box-shadow: 0px 10px 20px rgba(0,0,0,0.4);
+            cursor: pointer;
+            transition: transform 0.3s ease;
+        }
+
+        video:hover {
+              transform:scale(1.05);
         }
 
         .gallery-link {
@@ -105,21 +130,35 @@
     </div>
 
     <img height="300px" src="images/meowgical.jpg" alt="a photo of a grey persian cat">
-    
+    <img height="300px" src="images/kit-mata.jpg" alt="a photo of a grey persian cat">
+    <img height="300px" src="images/kit-bed.jpg" alt="a photo of a grey persian cat">
+    <img height="300px" src="images/kit-box.jpg" alt="a photo of a grey persian cat">
+
     <p class="content-box"><strong>The Inner Circle:</strong> This is also her another photos with her friends</p>
 
-    <img height="200px" src="images/1sample.jpg" alt="a group of cats"> 
-    <img height="200px" src="images/penguin.jpg" alt="three penguins">
-    <img height="200px" src="images/koala.jpg" alt="sleeping koala"> 
+    <img height="200px" src="images/kit-twie.jpg" alt="a group of cats"> 
+    <img height="200px" src="images/kit-mie.jpg" alt="three penguins">
+    <img height="200px" src="images/kit-twi2.jpg" alt="sleeping koala"> 
+    <img height="200px" src="images/kit-dy-mi.jpg" alt="sleeping koala">
+    <img height="200px" src="images/kit-miy.jpg" alt="sleeping koala">
+     <img height="200px" src="images/barie-sleep.jpg" alt="sleeping koala">   
 
     <p class="content-box"><strong>In Motion:</strong> Watch Babie Barie in action!</p>
 
     <video width="320" height="560" controls>
-        <source src="images/mochiche-eating.mp4" type="video/mp4">
+        <source src="images/yupak.mp4" type="video/mp4">
+    </video>      
+    
+    <video width="320" height="560" controls>
+        <source src="images/kit-bag.mp4" type="video/mp4">
     </video>
 
     <video width="320" height="560" controls>
-        <source src="images/drinking-milk.mp4" type="video/mp4">
+        <source src="images/kit-dek.mp4" type="video/mp4">
+    </video>
+          
+    <video width="320" height="560" controls>
+        <source src="images/kit-flor.mp4" type="video/mp4">      
     </video>
     
     <br><br>
