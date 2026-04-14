@@ -24,13 +24,22 @@
         }
 
         h1 {
-            font-family: 'Playfair Display', serif;
-            color: #ffffff;
-            font-size: 3rem;
-            text-transform: uppercase;
-            letter-spacing: 6px;
-            margin-top: 50px;
-            text-shadow: 3px 3px 10px rgba(0,0,0,0.8);
+           font-family: 'Playfair Display', serif;
+           color: #ff4d4d; 
+           font-weight: 700;
+           text-transform: uppercase;
+           letter-spacing: 5px; /* Increased spacing for elegance */
+           text-align: center;
+    
+           /* STACKED SHADOWS: This makes the text pop from every angle */
+           text-shadow: 
+            2px 2px 0px #000, 
+           -1px -1px 0px #000,  
+           1px -1px 0px #000,
+           -1px 1px 0px #000,
+           0px 0px 15px rgba(0,0,0,1); 
+        
+           margin-top: 40px;
         }
 
         .content-box {
@@ -99,10 +108,11 @@
             background-color: white;
             color: #ff4d4d;
             transform: scale(1.05);
+            text-decoration: underline;
         }
 
            /* The 'Underline' effect when the button is clicked */
-      .back-link:active {
+        .back-link:active {
            text-decoration: underline;
             background-color: #ffd700; /* Slightly darker yellow when pressed */
             transform: scale(0.98);    /* Makes it feel like a real button being pushed */
